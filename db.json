@@ -17,6 +17,12 @@
       "day": "3rd Februrary",
       "reminder": false,
       "id": "kdJJBTF"
+    },
+    {
+      "text": "Make Dinner",
+      "day": "Today at 21:00",
+      "reminder": true,
+      "id": "hgoIdhr"
     }
   ]
 }

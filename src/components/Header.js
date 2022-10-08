@@ -1,10 +1,9 @@
-import Button from './Button'
 
-const Header = ({title, onAdd, showAddBtn}) => {
+
+const Header = ({title}) => {
   return (
-    <header className="header-style">
-        <h1>{title}</h1>
-        <Button color={showAddBtn ? 'red' : 'steelblue'} text={showAddBtn ? 'Close' : 'Add'} onClick={onAdd}/>
+    <header className='header-container'>
+        <h1 className='header-text-container'>{title}</h1>
     </header>
   )
 }

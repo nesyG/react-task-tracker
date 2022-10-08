@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import Header from "./components/Header";
+import Button from "./components/Button"
 import Tasks from "./components/Tasks";
 import AddTask from "./components/AddTask";
 
@@ -69,10 +70,11 @@ const toggleReminder = async (id) => {
   setTask(tasks.map((task)=> task.id === id ? {...task, reminder: data.reminder} : task))
 }
   return (
-    <div className="container">
-    <Header title="Track your tasks!" onAdd = {()=> setToggleAddTask(!toggleAddTask)} showAddBtn={toggleAddTask}/>
+    <div className="main-container">
+    <Header title="Track your tasks!"/>
+    <Button onAdd = {()=> setToggleAddTask(!toggleAddTask)} showAddBtn={toggleAddTask}/>
     {toggleAddTask && <AddTask onAdd={addTask}/>}
-    {tasks.length > 0 ? <Tasks tasks = {tasks} onDelete={deleteTask} onToggle={toggleReminder}/> : "No tasks"} 
+    <div className="allTask-container">{tasks.length > 0 ? <Tasks className="" tasks = {tasks} onDelete={deleteTask} onToggle={toggleReminder}/> : "No tasks"}</div>
     </div>
     
   );

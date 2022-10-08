@@ -1,3 +1,59 @@
 .reminder {
-  border-left: 2px solid green;
+  border-left: 5px solid green;
+  padding-left: 1rem;
+}
+
+.main-container {
+  width: 70vw;
+  margin: 2rem auto;
+}
+
+.header-container {
+  text-align: center;
+}
+
+.header-text-container {
+  font-weight: 700;
+  background: linear-gradient(to right, rgb(84, 84, 192),rgb(206, 40, 40));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.form-container {
+  padding: 3rem 2rem;
+}
+
+.task-container {
+  margin: 2rem 0;
+  border: 1px solid rgba(189, 181, 181, 0.959);
+  border-radius: 1rem;
+  padding-left: 1rem;
+  padding-top: .9rem;
+}
+
+.allTask-container {
+  margin-top: 4rem;
+}
+
+.btn {
+  margin-top: 2rem;
+  font-size: larger;
+  font-weight: 500;
+  border: 2px solid rgb(223, 166, 166);
+}
+
+.task-text {
+  font-size: larger;
+  font-weight: 600;
+}
+
+.add-task-container {
+  margin: 2rem 0;
+}
+
+.label-container {
+  margin-right: .5rem;
+  font-size: medim;
+  font-weight: 500;
 }
